@@ -22,8 +22,10 @@ RUN wget -nv -O /tmp/geckodriver-$GECKO_DRIVER_VERSION-linux64.tar.gz \
 # Creating main image
 FROM alpine:3.6
 
-LABEL name="docker-robotframework" \
-      description="Docker image for Robot Framework with Selenium Library and Mozilla Webdriver"
+LABEL IMAGE_NAME="docker-robotframework"
+LABEL IMAGE_VERSION="v3.6.1"
+LABEL BUILD_TIME="(`date '+%Y-%m-%d %H:%M:%S'`)"
+LABEL DESCRIPTION="Docker image for Robot Framework with Selenium Library and Mozilla Webdriver"
 
 ARG ROBOT_VERSION="3.1.1" 
 ARG SELENIUM_LIBRARY_VERSION="3.3.1"

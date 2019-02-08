@@ -37,8 +37,8 @@ RUN set -xe && \
     apk add --no-cache \
         curl ca-certificates python2 py2-pip openssh-client git \
         firefox-esr==$FIREFOX_VERSION-`apk search firefox-esr | cut -d "-" -f 4` &&\
-    pip install --upgrade pip && \
-    pip install \
+    pip install --disable-pip-version-check --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir \
     robotframework==$ROBOT_VERSION \
     robotframework-seleniumlibrary==$SELENIUM_LIBRARY_VERSION
 

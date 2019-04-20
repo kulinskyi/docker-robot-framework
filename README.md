@@ -14,7 +14,7 @@ Did you find issue? Leave information about it:
 * Python 2.7.15
 * Robot Framework 3.1.1
 * Robot Framework SeleniumLibrary 3.3.1
-* Firefox ESR 60.4.0
+* Firefox ESR 60.6.1
 * Mozilla Webdriver 0.24.0
 
 ## How to use this image
